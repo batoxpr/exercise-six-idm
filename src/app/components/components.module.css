@@ -1,0 +1,15 @@
+.Header {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 25px;
+}
+
+.HeaderNav a {
+    color: blueviolet;
+    margin: 0 8px;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
