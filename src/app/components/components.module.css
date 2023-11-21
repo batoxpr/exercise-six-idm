@@ -13,3 +13,9 @@
     font-weight: bold;
     text-decoration: none;
 }
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+}

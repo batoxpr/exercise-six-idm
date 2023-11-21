@@ -1,4 +1,6 @@
-import Header from "@/app/components/header";
+import Header from "@/app/components/Header";
+
+
 export default function UserProfile() {
     return (
         <>
