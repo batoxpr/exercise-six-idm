@@ -1,14 +1,18 @@
-import Header from "@/app/components/Header";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import LoginForm from "@/app/components/LoginForm";
 
-export default function Login() {
+export default function Login({isLoggedIn, loginUser}) {
+  const router = useRouter();
+  useEffect(() => {
+    // to do: if user is logged in forward them to the profile page
+    if (isLoggedIn) router.push("/");
+  }, [isLoggedIn]);
+
     return (
-        <>
-          <Header />
           <main>
             <h1>Login</h1>
-            <LoginForm/>
+            <LoginForm loginUser={loginUser}/>
           </main>
-        </>
     );
 }
